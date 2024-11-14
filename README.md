@@ -13,7 +13,7 @@
 <p align="center">
  <!-- <a href="https://circleci.com/gh/typosearch/typosearch"><img src="https://circleci.com/gh/typosearch/typosearch.svg?style=shield&circle-token=1addd775339738a3d90869ddd8201110d561feaa"></a> -->
  <a href="https://hub.docker.com/r/typosearch/typosearch/tags"><img src="https://img.shields.io/docker/pulls/typosearch/typosearch"></a>
-  <a href="https://github.com/typosearch"><img src="https://img.shields.io/github/stars/typosearch/typosearch?label=github%20stars&style=flat"></a><br>
+  <a href="https://github.com/khulnasoft"><img src="https://img.shields.io/github/stars/typosearch/typosearch?label=github%20stars&style=flat"></a><br>
   <a href="https://cloud.typosearch.org"><img src="https://img.shields.io/badge/searches_per_month_on_typosearch_cloud-10 Billion-blue"></a>
 <p>
 <p align="center">
@@ -215,28 +215,28 @@ This will guide you through the process of starting up a Typosearch server, inde
 
 Here's our official API documentation, available on our website: [https://typosearch.org/api](https://typosearch.org/api).
 
-If you notice any issues with the documentation or walk-through, please let us know or send us a PR here: [https://github.com/typosearch/typosearch-website](https://github.com/typosearch/typosearch-website).
+If you notice any issues with the documentation or walk-through, please let us know or send us a PR here: [https://github.com/khulnasoft/typosearch-website](https://github.com/khulnasoft/typosearch-website).
 
 ## API Clients
 
 While you can definitely use CURL to interact with Typosearch Server directly, we offer official API clients to simplify using Typosearch from your language of choice. The API Clients come built-in with a smart retry strategy to ensure that API calls made via them are resilient, especially in an HA setup.
 
-- [JavaScript](https://github.com/typosearch/typosearch-js)
-- [PHP](https://github.com/typosearch/typosearch-php)
-- [Python](https://github.com/typosearch/typosearch-python)
-- [Ruby](https://github.com/typosearch/typosearch-ruby)
+- [JavaScript](https://github.com/khulnasoft/typosearch-js)
+- [PHP](https://github.com/khulnasoft/typosearch-php)
+- [Python](https://github.com/khulnasoft/typosearch-python)
+- [Ruby](https://github.com/khulnasoft/typosearch-ruby)
 
 If we don't offer an API client in your language, you can still use any popular HTTP client library to access Typosearch's APIs directly. 
 
 Here are some community-contributed clients and integrations:
 
-- [Go](https://github.com/typosearch/typosearch-go)
+- [Go](https://github.com/khulnasoft/typosearch-go)
 - [.Net](https://github.com/DAXGRID/typosearch-dotnet)
-- [Java](https://github.com/typosearch/typosearch-java)
-- [Rust](https://github.com/typosearch/typosearch-rust)
-- [Dart](https://github.com/typosearch/typosearch-dart)
+- [Java](https://github.com/khulnasoft/typosearch-java)
+- [Rust](https://github.com/khulnasoft/typosearch-rust)
+- [Dart](https://github.com/khulnasoft/typosearch-dart)
 - [Perl](https://github.com/Ovid/Search-Typosearch)
-- [Swift](https://github.com/typosearch/typosearch-swift)
+- [Swift](https://github.com/khulnasoft/typosearch-swift)
 - [Clojure](https://github.com/runeanielsen/typosearch-clj)
 - [python orm client](https://github.com/RedSnail/typosearch_orm)
 - [PHP SEAL Adapter](https://github.com/schranz-search/seal-typosearch-adapter)
@@ -248,15 +248,15 @@ We welcome community contributions to add more official client libraries and int
 
 We also have the following framework integrations:
 
-- [Laravel](https://github.com/typosearch/laravel-scout-typosearch-engine)
-- [Firebase](https://github.com/typosearch/firestore-typosearch-search)
+- [Laravel](https://github.com/khulnasoft/laravel-scout-typosearch-engine)
+- [Firebase](https://github.com/khulnasoft/firestore-typosearch-search)
 - [Gatsby](https://www.gatsbyjs.com/plugins/gatsby-plugin-typosearch/)
 - [WordPress](https://wordpress.org/plugins/search-with-typosearch/?ref=typosearch)
 - [WooCommerce](https://www.codemanas.com/downloads/typosearch-search-for-woocommerce/?ref=typosearch)
 - [Symfony](https://github.com/acseo/TyposearchBundle)
-- [InstantSearch](https://github.com/typosearch/typosearch-instantsearch-adapter)
+- [InstantSearch](https://github.com/khulnasoft/typosearch-instantsearch-adapter)
 - [DocSearch](https://typosearch.org/docs/guide/docsearch.html)
-- [Docusaurus](https://github.com/typosearch/docusaurus-theme-search-typosearch)
+- [Docusaurus](https://github.com/khulnasoft/docusaurus-theme-search-typosearch)
 - [ToolJet](https://tooljet.com/?ref=typosearch)
 - [Plone CMS](https://pypi.org/project/zopyx.typosearch/)
 - [Craft CMS](https://plugins.craftcms.com/typosearch)
@@ -264,14 +264,14 @@ We also have the following framework integrations:
 
 ### Postman Collection
 
-We have a community-maintained Postman Collection here: [https://github.com/typosearch/postman](https://github.com/typosearch/postman).
+We have a community-maintained Postman Collection here: [https://github.com/khulnasoft/postman](https://github.com/khulnasoft/postman).
 
 [Postman](https://www.postman.com/downloads/) is an app that let's you perform HTTP requests by pointing and clicking, instead of having to type them out in the terminal.
 The Postman Collection above gives you template requests that you can import into Postman, to quickly make API calls to Typosearch.
 
 ## Search UI Components
 
-You can use our [InstantSearch.js adapter](https://github.com/typosearch/typosearch-instantsearch-adapter) 
+You can use our [InstantSearch.js adapter](https://github.com/khulnasoft/typosearch-instantsearch-adapter) 
 to quickly build powerful search experiences, complete with filtering, sorting, pagination and more.
 
 Here's how: [https://typosearch.org/docs/guide/search-ui-components.html](https://typosearch.org/docs/guide/search-ui-components.html) 
@@ -367,7 +367,7 @@ We offer Paid Support options described [here](https://typosearch.org/support/).
 
 ## Contributing
 
-We are a lean team on a mission to democratize search and we'll take all the help we can get! If you'd like to get involved, here's information on where we could use your help: [Contributing.md](https://github.com/typosearch/typosearch/blob/master/CONTRIBUTING.md)
+We are a lean team on a mission to democratize search and we'll take all the help we can get! If you'd like to get involved, here's information on where we could use your help: [Contributing.md](https://github.com/khulnasoft/typosearch/blob/master/CONTRIBUTING.md)
 
 ## Getting Latest Updates
 

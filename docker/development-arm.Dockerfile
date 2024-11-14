@@ -72,7 +72,7 @@ RUN tar -C /opt -xf /opt/elfutils-0.182.tar.bz2
 RUN cd /opt/elfutils-0.182 && ./configure --disable-libdebuginfod --disable-debuginfod --without-lzma --without-bzlib && \
 make -j8 && make install && rm -rf /usr/local/lib/*.so*
 
-ADD https://github.com/typosearch/incubator-brpc/archive/a48506a.tar.gz /opt/brpc-a48506a.tar.gz
+ADD https://github.com/khulnasoft/incubator-brpc/archive/a48506a.tar.gz /opt/brpc-a48506a.tar.gz
 RUN tar -C /opt -xf /opt/brpc-a48506a.tar.gz
 COPY patches/brpc_cmakelists.txt /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/src/CMakeLists.txt
 RUN chown root:root /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/src/CMakeLists.txt
@@ -82,7 +82,7 @@ RUN mkdir -p /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/bld &&
     make -j8 && make install && rm -rf /usr/local/lib/*.so* && \
     rm -rf /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/bld/output/bin
 
-ADD https://github.com/typosearch/braft/archive/80d97b2.tar.gz /opt/braft-80d97b2.tar.gz
+ADD https://github.com/khulnasoft/braft/archive/80d97b2.tar.gz /opt/braft-80d97b2.tar.gz
 RUN tar -C /opt -xf /opt/braft-80d97b2.tar.gz
 COPY patches/braft_cmakelists.txt /opt/braft-80d97b2475b3c0afca79c19b64d46bb665d704f4/src/CMakeLists.txt
 RUN chown root:root /opt/braft-80d97b2475b3c0afca79c19b64d46bb665d704f4/src/CMakeLists.txt

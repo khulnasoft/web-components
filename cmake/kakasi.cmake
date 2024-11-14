@@ -6,7 +6,7 @@ set(KAKASI_TAR_PATH ${DEP_ROOT_DIR}/${KAKASI_NAME}.tar.gz)
 
 if(NOT EXISTS ${KAKASI_TAR_PATH})
     message(STATUS "Downloading kakasi...")
-    file(DOWNLOAD https://github.com/typosearch/kakasi/archive/${KAKASI_VERSION}.tar.gz ${KAKASI_TAR_PATH})
+    file(DOWNLOAD https://github.com/khulnasoft/kakasi/archive/${KAKASI_VERSION}.tar.gz ${KAKASI_TAR_PATH})
 endif()
 
 if(NOT EXISTS ${DEP_ROOT_DIR}/${KAKASI_NAME})

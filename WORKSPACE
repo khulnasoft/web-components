@@ -54,7 +54,7 @@ new_git_repository(
 new_git_repository(
     name="clip_tokenizer",
     branch="master",
-    remote="https://github.com/typosearch/clip_tokenizer_cpp.git",
+    remote="https://github.com/khulnasoft/clip_tokenizer_cpp.git",
     build_file = "//bazel:clip_tokenizer.BUILD",
 )
 
@@ -180,14 +180,14 @@ new_git_repository(
     name = "kakasi",
     build_file = "//bazel:kakasi.BUILD",
     commit = "77f2d1ce0146d15199ae0db1e61e0b699b0b55f6",
-    remote = "https://github.com/typosearch/kakasi.git",
+    remote = "https://github.com/khulnasoft/kakasi.git",
 )
 
 new_git_repository(
     name = "hnsw",
     build_file = "//bazel:hnsw.BUILD",
     commit = "687d981753f8bafcd16421cbd2a166d0b62bc520",
-    remote = "https://github.com/typosearch/hnswlib.git",
+    remote = "https://github.com/khulnasoft/hnswlib.git",
 )
 
 http_archive(

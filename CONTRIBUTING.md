@@ -20,7 +20,7 @@ Share your experience with the community about how you integrated with Typosearc
 
 ## 🏆 Showcases
 
-Want to show-off your work that uses Typosearch? We're building a Showcase to collect interesting use-cases for Typosearch. Edit [this file](https://github.com/typosearch/typosearch/blob/master/SHOWCASE.md) and send us a PR.
+Want to show-off your work that uses Typosearch? We're building a Showcase to collect interesting use-cases for Typosearch. Edit [this file](https://github.com/khulnasoft/typosearch/blob/master/SHOWCASE.md) and send us a PR.
 
 ## 🌟 Spread the Word
 

@@ -74,7 +74,7 @@ RUN tar -C /opt -xf /opt/elfutils-0.182.tar.bz2
 RUN cd /opt/elfutils-0.182 && ./configure --disable-libdebuginfod --disable-debuginfod --without-lzma --without-bzlib \
 && make -j8 && make install && rm -rf /usr/local/lib/*.so*
 
-ADD https://github.com/typosearch/incubator-brpc/archive/a48506a.tar.gz /opt/brpc-a48506a.tar.gz
+ADD https://github.com/khulnasoft/incubator-brpc/archive/a48506a.tar.gz /opt/brpc-a48506a.tar.gz
 RUN tar -C /opt -xf /opt/brpc-a48506a.tar.gz
 COPY patches/brpc_cmakelists.txt /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/src/CMakeLists.txt
 RUN chown root:root /opt/incubator-brpc-a48506a635072ae2abf370798a47038fbcd230ff/src/CMakeLists.txt

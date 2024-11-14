@@ -5,8 +5,8 @@ set(HNSW_NAME hnswlib-${HNSW_VERSION})
 set(HNSW_TAR_PATH ${DEP_ROOT_DIR}/${HNSW_NAME}.tar.gz)
 
 if(NOT EXISTS ${HNSW_TAR_PATH})
-    message(STATUS "Downloading https://github.com/typosearch/hnswlib/archive/${HNSW_VERSION}.tar.gz")
-    file(DOWNLOAD https://github.com/typosearch/hnswlib/archive/${HNSW_VERSION}.tar.gz ${HNSW_TAR_PATH})
+    message(STATUS "Downloading https://github.com/khulnasoft/hnswlib/archive/${HNSW_VERSION}.tar.gz")
+    file(DOWNLOAD https://github.com/khulnasoft/hnswlib/archive/${HNSW_VERSION}.tar.gz ${HNSW_TAR_PATH})
 endif()
 
 if(NOT EXISTS ${DEP_ROOT_DIR}/${HNSW_NAME})

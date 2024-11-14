@@ -1,9 +1,9 @@
-# $ docker build --file docker/bazel_dev.Dockerfile --tag  typosearch/bazel_dev:DDMMYYYY ./docker
+# $ docker build --file docker/bazel_dev.Dockerfile --tag  khulnasoft/bazel_dev:DDMMYYYY ./docker
 # NOTE: Default build image is bloated. Before publishing, export from a container to squash the image:
-# $ docker run -it typosearch/bazel_dev:DDMMYYYY bash -c "exit"
+# $ docker run -it khulnasoft/bazel_dev:DDMMYYYY bash -c "exit"
 # $ docker ps -a | grep bazel_dev
-# $ docker export <container_id> | docker import - typosearch/bazel_dev:latest
-# $ docker push typosearch/bazel_dev:latest
+# $ docker export <container_id> | docker import - khulnasoft/bazel_dev:latest
+# $ docker push khulnasoft/bazel_dev:latest
 
 FROM ubuntu:14.10
 

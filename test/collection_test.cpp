@@ -4033,7 +4033,7 @@ TEST_F(CollectionTest, DISABLED_SearchingForRecordsWithSpecialChars) {
     std::vector<std::vector<std::string>> records = {
         {"Amazon Home", "https://amazon.com/"},
         {"Google Home", "https://google.com///"},
-        {"Github Issue", "https://github.com/typosearch/typosearch/issues/241"},
+        {"Github Issue", "https://github.com/khulnasoft/typosearch/issues/241"},
         {"Amazon Search", "https://www.amazon.com/s?k=phone&ref=nb_sb_noss_2"},
     };
 

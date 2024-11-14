@@ -17,7 +17,7 @@ fi
 
 docker run --user $UID:$GID --volume="/etc/group:/etc/group:ro" --volume="/etc/passwd:/etc/passwd:ro" \
 --volume="/etc/shadow:/etc/shadow:ro" -it --rm -v /bazeld:/bazeld -v $PROJECT_DIR:/src \
---workdir /src typosearch/bazel_dev:24032023 bazel --output_user_root=/bazeld/cache build --verbose_failures \
+--workdir /src khulnasoft/bazel_dev:24032023 bazel --output_user_root=/bazeld/cache build --verbose_failures \
 --jobs=6 --action_env=LD_LIBRARY_PATH="/usr/local/gcc-10.3.0/lib64" \
 --define=TYPOSEARCH_VERSION=\"$TYPOSEARCH_VERSION\" //:$TYPOSEARCH_TARGET
 
