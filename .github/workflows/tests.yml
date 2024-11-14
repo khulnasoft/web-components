@@ -1,0 +1,46 @@
+name: Test
+
+on:
+  push:
+    paths-ignore:
+      - '**/*.md'
+  pull_request:
+    paths-ignore:
+      - '**/*.md'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      typosearch:
+        image: typosearch/typosearch:27.0
+        ports:
+          - 8108:8108/tcp
+        volumes:
+          - /tmp/typosearch-server-data:/data
+        env:
+          TYPOSEARCH_DATA_DIR: '/data'
+          TYPOSEARCH_API_KEY: 'test_key'
+          TYPOSEARCH_ENABLE_CORS: true
+          TYPOSEARCH_URL: 'http://localhost:8108'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+
+      - name: Install dependencies
+        run: go mod download
+
+      - name: Build
+        run: go build -v ./...
+
+      - name: Run tests
+        env:
+          TYPOSEARCH_URL: 'http://localhost:8108'
+          TYPOSEARCH_API_KEY: 'test_key'
+          CGO_ENABLED: 1
+        run: go run gotest.tools/gotestsum@latest --format github-actions -- -tags=integration ./... -race -shuffle=on
