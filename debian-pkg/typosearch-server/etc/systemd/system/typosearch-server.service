@@ -1,0 +1,14 @@
+[Unit]
+Description=Typosearch Server
+Documentation=https://typosearch.org
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+[Service]
+ExecStart=/usr/bin/typosearch-server --config=/etc/typosearch/typosearch-server.ini
+Restart=on-failure
+LimitNOFILE=64000
+LimitMEMLOCK=infinity
+
+[Install]
+WantedBy=multi-user.target

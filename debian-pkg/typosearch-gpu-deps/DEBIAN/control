@@ -1,0 +1,7 @@
+Package: typosearch-gpu-deps
+Version: $VERSION
+Maintainer: Typosearch Inc. <contact@typosearch.org>
+Description: Typosearch GPU Dependencies
+Homepage: https://typosearch.org
+Architecture: $ARCH
+Depends: curl

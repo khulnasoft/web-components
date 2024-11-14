@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Generate a random API key
+API_KEY=$(LC_ALL=C tr -dc 'A-Za-z0-9' </dev/urandom | head -c 48 ; echo)
+sed -i "s/\$API_KEY/$API_KEY/g" /etc/typosearch/typosearch-server.ini
+
+systemctl enable typosearch-server
+systemctl daemon-reload
+systemctl start typosearch-server

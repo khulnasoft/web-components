@@ -1,0 +1,7 @@
+Package: typosearch-server
+Version: $VERSION
+Maintainer: Typosearch Inc. <contact@typosearch.org>
+Description: Typosearch Server
+Homepage: https://typosearch.org
+Architecture: $ARCH
+Depends: curl
