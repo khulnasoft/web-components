@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       typosearch:
-        image: typosearch/typosearch:27.0
+        image: khulnasoft/typosearch:27.0
         ports:
           - 8108:8108/tcp
         volumes:
