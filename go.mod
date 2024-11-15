@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/google/uuid v1.5.0
-	github.com/jinzhu/copier v0.3.4
+	github.com/jinzhu/copier v0.4.0
 	github.com/oapi-codegen/oapi-codegen/v2 v2.3.0
 	github.com/oapi-codegen/runtime v1.1.1
 	github.com/sony/gobreaker v0.5.0
