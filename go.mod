@@ -7,7 +7,7 @@ require (
 	github.com/jinzhu/copier v0.3.4
 	github.com/oapi-codegen/oapi-codegen/v2 v2.3.0
 	github.com/oapi-codegen/runtime v1.1.1
-	github.com/sony/gobreaker v0.5.0
+	github.com/sony/gobreaker v1.0.0
 	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.12.0
 	go.uber.org/mock v0.4.0
